@@ -1,0 +1,16 @@
+{
+  "name": "smb-project",
+  "version": "0.0.0",
+  "description": "Salesforce project for SMB products.",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisabad/smb-project.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "gitHead": "bb886fdd385c8182230780e62db81c3b18ec20a9"
+}
