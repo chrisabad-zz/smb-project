@@ -26,7 +26,9 @@ $('#subscribe-form').submit(function() {
 			}
 
 			// the identified user is identified with traits
-			analytics.identify(email, { email: email, name: email });
+			traits = { email: email, name: email }
+			traits[name] = true;
+			analytics.identify(email, traits);
 			analytics.track('Signed up for ' + name);
 	    }
 		return false;
