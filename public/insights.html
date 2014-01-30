@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="/stylesheets/application.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,19 +29,28 @@
     <h1>Insights Product</h1>
     <div>
       <p>Sign up for our invite list.</p>
-      <form>
+      <form id="subscribe-form" name="Insights Product">
         <label>Email Address</label>
         <input type="text" name="email" placeholder="name@example.com" />
         <input type="submit" value="Submit">
       </form>
+
+      <div id="success-message">
+        <p>Thank you for your interest!</p>
+      </div>
     </div>
     <p>
       Go back to the <a href="/">StealthCo site</a>.
     </p>
-
+  </body>
+  <footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-  </body>
+    <script src="/javascripts/form.js"></script>
+    <script type="text/javascript">
+      window.analytics.page('Insights Product');
+    </script>
+  </footer>
 </html>
