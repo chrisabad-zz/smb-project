@@ -72,8 +72,8 @@ p {
 .top-header {
 	padding-top: 50px;
 	color: #f8f8f8;
-	/*background-image: url("../images/ensemble/hero_bg.png");*/
-	background-color: #344A5F;
+	background-image: url("../images/piccolo/hero_bg.png");
+	/*background-color: #344A5F;*/
 	background-size: cover;
 }
 
@@ -260,7 +260,7 @@ i.service-icon {
 /* Info content */
 
 .wrap-content {
-	background:#ec6f6d;
+	background:#344A5F;
 	padding:75px 0;
 }
 
