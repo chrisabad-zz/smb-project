@@ -731,14 +731,19 @@ p.copyright {
 
 @media (max-width: 421px) {
 
-	#hero {
+/*	#hero {
+		width: 100%;
 		margin-top: -50px;
-	}
+	}*/
 
 	.container {
 		max-width:280px;
 		width:280px;
 		margin:0 auto;
+	}
+
+	.top-message > h1 {
+		font-size: 2em;
 	}
 
 	.cl-effect-2 a {
@@ -771,7 +776,7 @@ p.copyright {
 
 }
 
-@media (max-width: 767px) {
+@media only screen and (min-width: 421px) and (max-width: 767px) {
 
 	#hero {
 		margin-top: -50px;
@@ -891,7 +896,7 @@ p.copyright {
 		margin-top: 60px;
 	}
 
-}
+}*/
 
 @media only screen and (min-width: 960px) and (max-width: 1050px) {
 
