@@ -49,10 +49,14 @@ p {
 
 /* top content */
 
+/*#hero_container {
+	overflow: hidden;
+}*/
+
 #hero {
-	width: 80%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	width: 100%;
+	margin-top: 80px;
+	/*margin-bottom: 30px;*/
 }
 
 #image1 {
@@ -61,7 +65,7 @@ p {
 }
 
 #image2 {
-	width: 80%;
+	width: 120%;
 	/*float: left;*/
 }
 
@@ -731,6 +735,10 @@ p.copyright {
 }
 
 @media (max-width: 767px) {
+	
+	#hero {
+		margin-top: -50px;
+	}
 
 	.container {
 		max-width:420px;
@@ -782,6 +790,10 @@ p.copyright {
 }
 
 @media (max-width: 421px) {
+
+	#hero {
+		margin-top: -50px;
+	}
 
 	.container {
 		max-width:280px;

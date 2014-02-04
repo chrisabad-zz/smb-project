@@ -50,9 +50,8 @@ p {
 /* top content */
 
 #hero {
-	width: 80%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	width: 100%;
+	margin-top: 0px;
 }
 
 #image1 {
@@ -732,6 +731,10 @@ p.copyright {
 
 @media (max-width: 767px) {
 
+	#hero {
+		margin-top: -60px;
+	}
+
 	.container {
 		max-width:420px;
 		width:420px;
@@ -783,6 +786,10 @@ p.copyright {
 
 @media (max-width: 421px) {
 
+	#hero {
+		margin-top: -60px;
+	}
+
 	.container {
 		max-width:280px;
 		width:280px;
@@ -820,6 +827,7 @@ p.copyright {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+	
 
 	.top-message {
 		padding-right:0px;
@@ -900,4 +908,10 @@ p.copyright {
 		margin-bottom:10px;
 	}
 
+}
+
+@media only screen and (min-width: 1200px) {
+	#hero {
+		margin-top: 150px;
+	}
 }
