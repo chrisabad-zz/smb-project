@@ -49,10 +49,14 @@ p {
 
 /* top content */
 
+/*#hero_container {
+	overflow: hidden;
+}*/
+
 #hero {
-	width: 80%;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	width: 100%;
+	margin-top: 80px;
+	/*margin-bottom: 30px;*/
 }
 
 #image1 {
@@ -61,7 +65,7 @@ p {
 }
 
 #image2 {
-	width: 80%;
+	width: 120%;
 	/*float: left;*/
 }
 
@@ -73,8 +77,8 @@ p {
 .top-header {
 	padding-top: 50px;
 	color: #f8f8f8;
-	/*background-image: url("../images/ensemble/hero_bg.png");*/
-	background-color: #344A5F;
+	background-image: url("../images/legato/hero_bg.png");
+	/*background-color: #344A5F;*/
 	background-size: cover;
 }
 
@@ -261,12 +265,12 @@ i.service-icon {
 /* Info content */
 
 .wrap-content {
-	background:#ec6f6d;
+	background: #F3AE4E;
 	padding:75px 0;
 }
 
 .wrap-content1 {
-	background:#F0F1F2;
+	background: #F0F1F2;
 	font-color: black;
 }
 
@@ -483,7 +487,7 @@ i.service-icon {
 
 .newsletter {
 	color: #ffffff;
-	background: #344A5F;
+	background: #F3AE4E;
 	padding: 40px 0 55px;
 }
 
@@ -731,6 +735,10 @@ p.copyright {
 }
 
 @media (max-width: 767px) {
+	
+	#hero {
+		margin-top: -50px;
+	}
 
 	.container {
 		max-width:420px;
@@ -782,6 +790,10 @@ p.copyright {
 }
 
 @media (max-width: 421px) {
+
+	#hero {
+		margin-top: -50px;
+	}
 
 	.container {
 		max-width:280px;
