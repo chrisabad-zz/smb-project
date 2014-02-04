@@ -6,6 +6,7 @@
   <title>Ensemble</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.2/firebase.js'></script>
   <!-- Bootstrap -->
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
@@ -92,11 +93,18 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center">
-        <h3>Like our product? Subscribe for Updates.</h3>
+        <h3 id="subscribe-text">Like our product? Subscribe for Updates.</h3>
         <form id="subscribe-form" name="Ensemble">
           <input type="text" name="email" placeholder="name@example.com" />
           <input type="submit" class="fa fa-envelope" value="Submit">
         </form>
+
+        <div id="feedback-request" hidden=true>
+          <form id="feedback-form" name="Ensemble">
+            <input type="textarea" id="feedback" rows="3" placeholder="What do you think of this product"/>
+            <input type="submit" class="fa fa-envelope" value="Submit Feedback">
+          </form>
+        </div>
 
         <div id="success-message" hidden=true>
           <h4>Thank you for your interest!</p>
