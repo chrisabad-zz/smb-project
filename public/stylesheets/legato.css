@@ -503,6 +503,20 @@ i.service-icon {
 	top: 2px;
 }
 
+.newsletter textarea {
+	border:none;
+	background:#fff;
+	height: 123px;
+	border-radius: 6px;
+	padding: 0px 15px;
+	font-family: Open Sans;
+	font-weight: 600;
+	position: relative;
+	top: 2px;	
+	padding-top: 10px;
+	resize: vertical;
+}
+
 .newsletter .btn {
 	margin: 10px;
 	text-transform:uppercase;
@@ -751,7 +765,7 @@ p.copyright {
 	}
 
 	.top-message > h1 {
-		font-size: 3em;
+		font-size: 2.5em;
 	}
 
 	ul.top-social-buttons > li {
