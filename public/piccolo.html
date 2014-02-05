@@ -91,7 +91,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center">
-        <h3>Like our product? Subscribe for Updates.</h3>
+        <h3 id="subscribe-text">Like our product? Subscribe for Updates.</h3>
         <form id="subscribe-form" name="Piccolo">
           <input type="text" name="email" placeholder="name@example.com" />
           <input type="submit" class="fa fa-envelope" value="Submit">
@@ -99,7 +99,7 @@
 
         <div id="feedback-request" hidden=true>
           <form id="feedback-form" name="Piccolo">
-            <input type="textarea" id="feedback" rows="3" placeholder="What do you think of this product"/>
+            <textarea id="feedback" rows="3" cols="25" placeholder="What do you think of this product?"></textarea>
             <input type="submit" class="fa fa-envelope" value="Submit Feedback">
           </form>
         </div>
@@ -107,8 +107,7 @@
         <div id="success-message" hidden=true>
           <h4>Thank you for your interest!</p>
         </div>
-        <!-- <input type="text" placeholder="Email Address"/>
-        <a href="#" class="btn btn-lg btn-primary"><i class="fa fa-envelope"></i> Join Now</a> -->
+
       </div>
     </div>
   </div>
@@ -175,18 +174,26 @@
 <!-- Info Content -->
 
 
+
 <!-- Newsletter -->
 <div class="newsletter">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center">
-        <h3>Like our product? Subscribe for Updates.</h3>
-        <form id="subscribe-form" name="Ensemble">
+        <h3 id="subscribe-text-bottom">Like our product? Subscribe for Updates.</h3>
+        <form id="subscribe-form-bottom" name="Piccolo">
           <input type="text" name="email" placeholder="name@example.com" />
           <input type="submit" class="fa fa-envelope" value="Submit">
         </form>
 
-        <div id="success-message" hidden=true>
+        <div id="feedback-request-bottom" hidden=true>
+          <form id="feedback-form-bottom" name="Piccolo">
+            <textarea id="feedback-bottom" rows="3" cols="25" placeholder="What do you think of this product?"></textarea>
+            <input type="submit" class="fa fa-envelope" value="Submit Feedback">
+          </form>
+        </div>
+
+        <div id="success-message-bottom" hidden=true>
           <h4>Thank you for your interest!</p>
         </div>
         <!-- <input type="text" placeholder="Email Address"/>
@@ -196,6 +203,8 @@
   </div>
 </div>
 <!-- Newsletter -->
+
+
 
 </body>
 <footer>
