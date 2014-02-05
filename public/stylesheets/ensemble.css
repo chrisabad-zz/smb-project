@@ -498,6 +498,20 @@ i.service-icon {
 	top: 2px;
 }
 
+.newsletter textarea {
+	border:none;
+	background:#fff;
+	height: 123px;
+	border-radius: 6px;
+	padding: 0px 15px;
+	font-family: Open Sans;
+	font-weight: 600;
+	position: relative;
+	top: 2px;	
+	padding-top: 10px;
+	resize: vertical;
+}
+
 .newsletter .btn {
 	margin: 10px;
 	text-transform:uppercase;
