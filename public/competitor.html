@@ -21,23 +21,24 @@
   	<!-- Optional theme -->
   	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
   	<link rel="stylesheet" href="stylesheets/application.css">
-	<div>
-		<h2>What do you think of this product?</h1>
+  	<link rel="stylesheet" href="stylesheets/competitor.css">
+	
+  	<!-- Feedback banner -->
+	<div id="feedback-banner">
+		<h2>What is your impression of the product below?</h2>
+		<h3>It's not ours but we'd love to hear what you think.</h3>
 		<form id="competitor-form" name="Competitor Product Feedback">
-			<input type="text" id="feedback" placeholder="What do you think of this product"/>
-			<input type="submit" value="Submit Feedback">
+			<textarea id="feedback" placeholder="Tell us what you think."></textarea>
+			<input class="button" type="submit" value="Submit Feedback">
 		</form>
-		<p id="subscribe-form-signup" hidden=true >Sign up for our invite list.</p>
-	    <form id="subscribe-form" hidden=true name="Email Product">
-	    	<label>Email Address</label>
-	        <input type="text" name="email" placeholder="name@example.com" />
-	        <input type="submit" value="Submit">
+		<!-- <p id="subscribe-form-signup" hidden=true >Sign up for our invite list.</p> -->
+	    <form id="subscribe-competitor" hidden=true name="Email Product">
+	    	<!-- <label>Email Address</label> -->
+	        <input class="signup" type="text" name="email" placeholder="name@example.com" />
+	        <input class="button" type="submit" value="Submit">
 	    </form>
-
-      	<div id="success-message">
-        	<p>Thank you for your interest!</p>
-      	</div>
 	</div>
+
 	<script type="text/javascript">
       window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var method=window.analytics.methods[i];window.analytics[method]=window.analytics.factory(method)}window.analytics.load=function(t){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)},window.analytics.SNIPPET_VERSION="2.0.8",
       window.analytics.load("fhydqx1tc4");
@@ -63,6 +64,6 @@
 	  <script type="text/javascript">
 	    window.analytics.page("competitor " + urlParams.product);
 	  </script>
-      <script src="/javascripts/form.js"></script>
+      <script src="javascripts/form.js"></script>
   </footer>
 </html>

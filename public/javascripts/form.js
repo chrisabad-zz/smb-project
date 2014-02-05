@@ -79,6 +79,48 @@ $('#subscribe-form-bottom').submit(function() {
 	}
 });
 
+$('#subscribe-competitor').submit(function() {
+	try {
+		var form = $(this);
+		var email = form.find('input[name="email"]').val();
+		var name = form.attr('name');
+
+		// Swap the message
+		form.hide();
+		// $('#success-message').show();
+		$('#feedback-request').show();
+		$('#subscribe-text').text("What do you think about the product?")
+		$('#feedback-banner h2').html('Thank you for your interest!');
+
+
+		if (email == '') {
+			console.log('Email was blank.');
+	    } else {
+	    	console.log('Identifying visitor as ' + email + '.');
+	    	
+	    	var user = analytics.user(); 
+			var id = user.id();
+
+			// only alias user if they are anonymous
+			console.log('ID: ' + id);
+			console.log('Email:' + email);
+			if (id != email) {
+				analytics.alias(email);
+			}
+
+			// the identified user is identified with traits
+			traits = { email: email, name: email }
+			traits[name] = true;
+			analytics.identify(email, traits);
+			analytics.track('Signed up for ' + name);
+	    }
+		return false;
+	} catch (error) {
+		console.log('There was an error.' + error);
+		return false;
+	}
+});
+
 $('#feedback-form').submit(function() {
 	try {
 		var form = $(this);
@@ -138,14 +180,16 @@ $('#feedback-form-bottom').submit(function() {
 $('#competitor-form').submit(function() {
 	try {
 		var form = $(this);
-		var content = form.find('input[id="feedback"]').val();
+		var content = form.find('textarea[id="feedback"]').val();
 		var name = form.attr('name');
 		var product = urlParams.product;
 
 		// Swap the message
 		form.hide();
-		$('#subscribe-form-signup').show();
-		$('#subscribe-form').show();
+		$('#subscribe-competitor').show();
+		$('#feedback-banner h2').html('Sign up for our invite list.');
+		$('#feedback-banner h3').hide();
+		$('#feedback-banner h2').css({'margin-bottom' : '10px'});
 
 		if (content == '') {
 			console.log('Feedback was blank.');
