@@ -1,0 +1,153 @@
+/* Fonts */
+
+@font-face {
+	font-family: 'HelveticaBdCn';
+	src: url('../fonts/HelveticaNeueLTPro-BdCn.otf');
+}
+@font-face {
+	font-family: 'HelveticaCn';
+	src: url('../fonts/HelveticaNeueLTPro-Cn.otf');
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 200;
+}
+
+body {font-weight:600;}
+
+.lead {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+p {
+	color:#656565;
+	font-weight:400;
+	font-family:"HelveticaCn", "HelveticaBdCn", "Open Sans";
+}
+
+
+/* Custom */
+#banner {
+	background-image: url('../images/randomizer/banner.png');
+	background-size: cover;
+	height: 300px;
+}
+
+#banner-title {
+	height: 100px;
+
+	position: absolute;
+	top: 80px;
+	left: -146px;
+    margin-left: 50%;
+}
+
+#banner-text {
+	width: 100%;
+	text-align: center;
+	color: white;
+	padding-top: 220px;
+	font-family:"HelveticaBdCn";
+}
+
+#text {
+	width: 120px;
+	display: block;
+	padding-top: 13px;
+	color: #2a94d6;
+	text-align: center;
+	font-family:"HelveticaBdCn";
+	float: left;
+}
+
+.line {
+	border-top: 1px solid #3093d1;
+	width: 240px;
+	float: left;
+}
+
+.fragment {
+	width: 600px;
+	display: block;
+	padding-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	/*right: 50%;*/
+	/*margin-left: 150px;*/
+}
+
+.three-choices {
+	width: 600px;
+}
+
+.choice {
+	width: 180px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.choice img {
+	width: 180px;
+}
+
+.choice p {
+	font-family: "HelveticaCn";
+	margin-top: 20px;
+	text-align: center;
+}
+
+#first {
+	color: red;
+}
+
+#second {
+	color: black;
+}
+
+#third {
+	color: yellow;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+@media (max-width: 768px) {
+	
+	.fragment {
+		width: 300px;
+		display: block;
+		padding-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.three-choices {
+		width: 300px;
+	}
+
+	.line {
+		border-top: 2px solid #3093d1;
+		width: 90px;
+		float: left;
+	}
+
+	.choice {
+		padding-bottom: 50px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
