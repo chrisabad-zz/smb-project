@@ -35,6 +35,9 @@ $(function() {
 	$('#third-text').text(shuffledConcepts[2].valueprop_text)
 
 	myFirebase.push({first: shuffledConcepts[0].product_name, second: shuffledConcepts[1].product_name, third: shuffledConcepts[2].product_name});
+	analytics.track("Company page presented: " + shuffledConcepts[0].product_name)
+	analytics.track("Company page presented: " + shuffledConcepts[1].product_name)
+	analytics.track("Company page presented: " + shuffledConcepts[2].product_name)
 
 return null;
 });
