@@ -139,7 +139,7 @@ $('#feedback-form').submit(function() {
 	    	var user = analytics.user(); 
 			var id = user.id() || 0;
 
-			var myRootRef = new Firebase('https://dazzling-fire-6599.firebaseio.com/feedbacks');
+			var myRootRef = new Firebase('https:/incandescent-fire-8092.firebaseio.com/feedbacks');
 			myRootRef.push({concept: name, text: content, user: id});
 	    }
 		return false;
@@ -167,7 +167,7 @@ $('#feedback-form-bottom').submit(function() {
 	    	var user = analytics.user(); 
 			var id = user.id() || 0;
 
-			var myRootRef = new Firebase('https://dazzling-fire-6599.firebaseio.com/feedbacks');
+			var myRootRef = new Firebase('https://incandescent-fire-8092.firebaseio.com/feedbacks');
 			myRootRef.push({concept: name, text: content, user: id});
 	    }
 		return false;
@@ -199,7 +199,7 @@ $('#competitor-form').submit(function() {
 	    	var user = analytics.user(); 
 			var id = user.id() || 0;
 
-			var myRootRef = new Firebase('https://dazzling-fire-6599.firebaseio.com/feedbacks');
+			var myRootRef = new Firebase('https://incandescent-fire-8092.firebaseio.com/feedbacks');
 			myRootRef.push({concept: product, text: content, user: id});
 	    }
 		return false;

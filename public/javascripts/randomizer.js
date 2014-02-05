@@ -20,7 +20,7 @@ $(function() {
 		var link_url = shuffledConcepts[k].link_url;
 	};
 
-	var myFirebase = new Firebase('https://dazzling-fire-6599.firebaseio.com/conceptcombos');
+	var myFirebase = new Firebase('https://incandescent-fire-8092.firebaseio.com/conceptcombos');
 
 	$("#first a").attr("href",shuffledConcepts[0].link_url)
 	$('#first-image').attr("src",shuffledConcepts[0].image_url)
