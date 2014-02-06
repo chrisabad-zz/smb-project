@@ -31,7 +31,7 @@ $('#subscribe-form').submit(function() {
 			traits = { email: email, name: email }
 			traits[name] = true;
 			analytics.identify(email, traits);
-			analytics.track('Signed up for ' + name);
+			analytics.track('Signed up', {product: name});
 	    }
 		return false;
 	} catch (error) {
@@ -70,7 +70,7 @@ $('#subscribe-form-bottom').submit(function() {
 			traits = { email: email, name: email }
 			traits[name] = true;
 			analytics.identify(email, traits);
-			analytics.track('Signed up for ' + name);
+			analytics.track('Signed up', {product: name});
 	    }
 		return false;
 	} catch (error) {
@@ -112,7 +112,7 @@ $('#subscribe-competitor').submit(function() {
 			traits = { email: email, name: email }
 			traits[name] = true;
 			analytics.identify(email, traits);
-			analytics.track('Signed up for ' + name);
+			analytics.track('Signed up', {product: name});
 	    }
 		return false;
 	} catch (error) {
@@ -141,6 +141,7 @@ $('#feedback-form').submit(function() {
 
 			var myRootRef = new Firebase('https:/incandescent-fire-8092.firebaseio.com/feedbacks');
 			myRootRef.push({concept: name, text: content, user: id});
+			analytics.track('Submitted Feedback', {product: name});
 	    }
 		return false;
 	} catch (error) {
@@ -169,6 +170,7 @@ $('#feedback-form-bottom').submit(function() {
 
 			var myRootRef = new Firebase('https://incandescent-fire-8092.firebaseio.com/feedbacks');
 			myRootRef.push({concept: name, text: content, user: id});
+			analytics.track('Submitted Feedback', {product: name});
 	    }
 		return false;
 	} catch (error) {
@@ -201,6 +203,7 @@ $('#competitor-form').submit(function() {
 
 			var myRootRef = new Firebase('https://incandescent-fire-8092.firebaseio.com/feedbacks');
 			myRootRef.push({concept: product, text: content, user: id});
+			analytics.track('Submitted Feedback', {product: product});
 	    }
 		return false;
 	} catch (error) {
