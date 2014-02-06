@@ -83,7 +83,8 @@ $('#subscribe-competitor').submit(function() {
 	try {
 		var form = $(this);
 		var email = form.find('input[name="email"]').val();
-		var name = form.attr('name');
+		var name = urlParams.product;
+		var product = urlParams.product;
 
 		// Swap the message
 		form.hide();
@@ -110,9 +111,9 @@ $('#subscribe-competitor').submit(function() {
 
 			// the identified user is identified with traits
 			traits = { email: email, name: email }
-			traits[name] = true;
+			traits[product] = true;
 			analytics.identify(email, traits);
-			analytics.track('Signed up', {product: name});
+			analytics.track('Signed up', {product: product});
 	    }
 		return false;
 	} catch (error) {
